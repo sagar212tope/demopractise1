@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	this is contact us page
+	<br>
+	<form th:action="@{/saveMsg}" method="post" th:object="${contact}">
+		<label for="name"> Student Name:</label><br> <input type="text"
+			th:field="*{name}" placeholder="enter your name" /><br>
+		<br> <label for="mobileNum">Mobile Number:</label><br> <input
+			type="text" th:field="*{mobileNum}" placeholder="enter your number" /><br>
+		<br> <label for="subject">Subject:</label><br> <input
+			type="text" th:field="*{subject}" placeholder="enter your subject" /><br>
+		<br> <input type="submit" value="Submit">
+
+
+
+	</form>
+</body>
+</html>

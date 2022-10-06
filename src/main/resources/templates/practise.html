@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>DPS School</title>
+</head>
+<body>
+<h1 th:text="'hello,'+${username}+ ' welcome to DPS'"></h1>
+ <a th:href="@{/home}">Home</a> 
+ &nbsp;
+ <a th:href="@{/about}">About</a> 
+ &nbsp;
+ <a th:href="@{/contact}">Contact us</a> 
+
+</body>
+</html>
